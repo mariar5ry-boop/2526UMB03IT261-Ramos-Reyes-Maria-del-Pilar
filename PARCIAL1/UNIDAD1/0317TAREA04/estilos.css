@@ -32,3 +32,9 @@ img {
     width: 200px;
 
 }
+
+table{
+    border: 1px solid #333; 
+    padding: 8px;
+    text-align: center;
+}
