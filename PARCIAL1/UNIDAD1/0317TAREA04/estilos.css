@@ -1,1 +1,16 @@
-body { background-color: #4bcc52; }
+body {
+     background-color: #4bcc52;
+     }     
+     
+     
+h1 {
+    background-color: rgb(60, 73, 192);
+    }
+
+h2{
+    background-color: rgb(35, 34, 39);
+  }
+
+h3{
+    background-color: blueviolet;
+}
