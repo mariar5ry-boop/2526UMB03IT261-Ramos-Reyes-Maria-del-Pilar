@@ -1,18 +1,22 @@
 body {
      background-color: #4bcc52;
+     text-align: center;
      }     
      
      
 h1 {
     background-color: rgb(60, 73, 192);
+    text-align: center;
     }
 
 h2{
     background-color: rgb(35, 34, 39);
+    text-align: center;
   }
 
 h3{
     background-color: blueviolet;
+    text-align: center;
 }
 
 p{
