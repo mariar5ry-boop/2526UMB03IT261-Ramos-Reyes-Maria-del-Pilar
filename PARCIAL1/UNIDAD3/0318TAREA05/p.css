@@ -1,0 +1,27 @@
+p{
+    color:green
+}
+
+.parrafo1 {
+    color: red
+}
+
+#parrafo2{
+    color:blueviolet
+}
+
+div h2{
+    color:blue
+}
+
+a:hover {
+    color: green;
+}
+
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1, h2{
+    color:brown
+}
