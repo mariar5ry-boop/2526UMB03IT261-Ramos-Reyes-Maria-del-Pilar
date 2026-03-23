@@ -11,5 +11,8 @@ h1{
 }
 
 p{
-    border: 12px solid blue
+    border: 2px solid blue
+}
+.titulo{
+    color: green
 }
