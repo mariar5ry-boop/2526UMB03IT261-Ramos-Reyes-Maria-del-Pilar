@@ -51,3 +51,13 @@ p{
 #parrafo2{
     border: 2px 2px 2px 2px
 }
+
+.divBlock {
+    display: block;
+    background-color: #001aff;
+}
+
+.divInline {
+    display: inline;
+    background-color: aquamarine;
+}
