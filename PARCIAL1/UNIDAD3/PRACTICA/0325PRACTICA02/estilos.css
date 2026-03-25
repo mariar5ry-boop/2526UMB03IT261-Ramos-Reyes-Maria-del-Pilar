@@ -40,4 +40,14 @@ input:focus {
     background-color: rgb(74, 192, 127);
 }
 
+#D1{
+    border: 2px solid blue
+}
 
+p{
+    border:3px solid red
+}
+
+#parrafo2{
+    border: 2px 2px 2px 2px
+}
