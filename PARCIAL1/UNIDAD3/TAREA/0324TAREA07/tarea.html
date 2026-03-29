@@ -1,0 +1,226 @@
+<html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las 7 Maravillas del Mundo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            
+            --bg-main: #9DBEBB;         
+            
+            --bg-card: #ffffff;         
+            --primary-accent: #244d4d;  
+            --secondary-accent: #c0392b; 
+            --text-body: #2f3e3e;       
+            
+            
+            --title-box-bg: #e0f2f1;    
+            --title-box-border: #ffffff; 
+            
+            --border-card: #7a9a97;     
+            
+            --font-titles: 'Abril Fatface', serif;
+            --font-body: 'Montserrat', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--bg-main);
+            color: var(--text-body);
+            overflow-x: hidden;
+            transition: background-color 0.5s ease; 
+        }
+
+        
+        .hero-section {
+            padding: 50px 0;
+        }
+
+        .full-width-title {
+            background-color: var(--title-box-bg);
+            width: 100%;
+            padding: 60px 0;
+            border-top: 4px solid var(--title-box-border);
+            border-bottom: 4px solid var(--title-box-border);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-family: var(--font-titles);
+            font-size: 4rem;
+            color: var(--primary-accent);
+            margin: 0;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+
+        .hero-section .lead {
+            color: var(--text-body);
+            font-weight: 400;
+            margin-top: 10px;
+            letter-spacing: 1px;
+            opacity: 0.8;
+        }
+
+        
+        .wonder-card {
+            background-color: var(--bg-card);
+            border: 2px solid var(--border-card);
+            border-radius: 20px; 
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            margin: 15px;
+            box-shadow: 0 8px 15px rgba(0,0,0,0.05);
+        }
+
+        .wonder-card:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15) !important;
+            border-color: var(--primary-accent);
+        }
+
+        .card-img-top {
+            height: 260px;
+            object-fit: cover;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .card-body {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .card-title {
+            font-family: var(--font-titles);
+            color: var(--primary-accent);
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .wonder-location {
+            color: var(--secondary-accent);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.85rem;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background-color: rgba(255,255,255,0.2);
+            padding: 40px 0;
+            margin-top: 60px;
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero-section">
+        <div class="full-width-title" data-aos="fade-down">
+            <div class="container">
+                <h1 class="display-3">Las 7 Maravillas del Mundo</h1>
+                <p class="lead fw-bold">Monumentos ganadores</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <div class="row g-5">
+            
+            <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                <div class="card h-100 wonder-card">
+                    <img src="http://upload.wikimedia.org/wikipedia/commons/a/a1/Chichen_itza.JPG" class="card-img-top" alt="Chichén Itzá">
+                    <div class="card-body">
+                        <h5 class="card-title">Chichén Itzá</h5>
+                        <p class="wonder-location">México</p>
+                        <p class="card-text">Se trata de una pirámide truncada y escalonada de unos 30 metros de altura. El edificio también se conoce como Templo de Kukulkán, ya que fue erigido en honor a ese dios.
+
+Durante los equinoccios, los escalones de la pirámide proyectan una sombra con forma de serpiente.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="card h-100 wonder-card">
+                    <img src="https://www.nationalgeographic.com.es/medio/2019/01/18/coliseo-roma_2e567462_1500x1081.jpg" class="card-img-top" alt="Coliseo">
+                    <div class="card-body">
+                        <h5 class="card-title">Coliseo</h5>
+                        <p class="wonder-location">Italia</p>
+                        <p class="card-text">En este anfiteatro se exhibían luchas de gladiadores, ejecuciones, cacería de animales, simulacro de batallas navales, etc. Por ende, la estructura estaba conformada por ingeniería compleja, que incluía un sistema de canalización de las aguas. En la actualidad, parte del Coliseo se encuentra en ruinas por la acción del tiempo y de los terremotos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card h-100 wonder-card">
+                    <img src="https://blog.paineirascorcovado.com.br/wp-content/uploads/2025/04/Cristo-Redentor-Por-do-sol-scaled.jpg" class="card-img-top" alt="Cristo Redentor">
+                    <div class="card-body">
+                        <h5 class="card-title">Cristo Redentor</h5>
+                        <p class="wonder-location">Brasil</p>
+                        <p class="card-text">La Estatua de Cristo Redentor se encuentra en la punta del monte Corcovado en la ciudad de Río de Janeiro, en Brasil. Con diseño del arquitecto Heitor da Silva Costa, la escultura fue inaugurada en 1931 y no tardó en convertirse en una de las principales atracciones para creyentes cristianos y visitantes de la ciudad.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                <div class="card h-100 wonder-card">
+                    <img src="https://www.nationalgeographic.com.es/medio/2015/09/24/hemis_0899041_1800x1198.jpg" class="card-img-top" alt="Gran Muralla">
+                    <div class="card-body">
+                        <h5 class="card-title">Gran Muralla</h5>
+                        <p class="wonder-location">China</p>
+                        <p class="card-text">La Muralla China es un muro fortificado que se construyó alrededor de China, a fin de proteger al Imperio de posibles invasores. Fue erigida a lo largo de diversas dinastías, pero la mayor parte se levantó durante la dinastía Ming, que gobernó desde 1368 hasta 1644.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="card h-100 wonder-card">
+                    <img src="https://www.machupicchureservations.org/wp-content/uploads/2022/11/peru-machu-picchu-4.jpg" class="card-img-top" alt="Machu Picchu">
+                    <div class="card-body">
+                        <h5 class="card-title">Machu Picchu</h5>
+                        <p class="wonder-location">Perú</p>
+                        <p class="card-text">Las ruinas de la ciudad de Machu Picchu, en Perú, están construidas en la cima de una montaña. De este modo, se convierten en uno de los logros arquitectónicos más impresionantes de la humanidad, así como en una auténtica proeza de ingeniería civil y agrícola.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card h-100 wonder-card">
+                    <img src="https://www.gannett-cdn.com/-mm-/1071abc117e5d9bd8372ed5cf4dfdf84e6e38373/c=0-152-2118-1349&r=x1683&c=3200x1680/local/-/media/2018/01/25/USATODAY/USATODAY/636524811387595367-GettyImages-637117156.jpg" class="card-img-top" alt="Petra">
+                    <div class="card-body">
+                        <h5 class="card-title">Petra</h5>
+                        <p class="wonder-location">Jordania</p>
+                        <p class="card-text">Recibe su nombre al estar construida en piedra. El Tesoro de Petra tiene 40 metros de alto y 28 metros de ancho, y pudo haber tenido funciones religiosas o funerarias. Por su parte, el llamado Monasterio de Petra tiene 45 metros de altura por 50 metros de ancho.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mx-auto" data-aos="fade-up" data-aos-delay="100">
+                <div class="card h-100 wonder-card">
+                    <img src="https://thumbs.dreamstime.com/b/taj-mahal-ivory-white-marble-mausoleum-city-agra-india-taj-mahal-ivory-white-marble-mausoleum-180377212.jpg" class="card-img-top" alt="Taj Mahal">
+                    <div class="card-body">
+                        <h5 class="card-title">Taj Mahal</h5>
+                        <p class="wonder-location">India</p>
+                        <p class="card-text">El Tal Mahal es un mausoleo construido en el siglo XVII por el emperador Shah Jahan para honrar a su esposa predilecta, Arjumand Banu Begum, conocida también como Mumtaz Mahal. Se encuentra en Agra, la India, al lado del río Yamuna.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
+</body>
+</html>
