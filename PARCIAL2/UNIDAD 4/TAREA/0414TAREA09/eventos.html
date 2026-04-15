@@ -1,0 +1,79 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <h1>Eventos en JavaScript</h1>
+
+        <button id="bt">Click</button>
+        <button id="btDoble">Doble Click</button>
+
+        <form id="form">
+            <input type="text" id="input">
+            <button type="submit">Enviar</button>
+        </form>
+
+        <select id="select">
+            <option value="Opcion 1">Opción 1</option>
+            <option value="Opcion 2">Opción 2</option>
+        </select>
+
+        <div id="caja" style="width:100px;height:100px;background:gray;margin-top:10px;"></div>
+
+        <script>
+            // 1. Click
+            document.getElementById("bt").addEventListener("click", function() {
+                alert("Click detectado");
+            });
+
+            // 2. Doble click
+            document.getElementById("btDoble").addEventListener("dblclick", function() {
+                alert("Doble click");
+            });
+
+            // 3. Submit
+            document.getElementById("form").addEventListener("submit", function(e) {
+                e.preventDefault();
+                alert("Formulario enviado");
+            });
+
+            // 4. Input
+            document.getElementById("input").addEventListener("input", function() {
+                 console.log("Escribiendo: " + this.value);
+            });
+
+            // 5. Keydown
+            document.addEventListener("keydown", function(e) {
+                console.log("Tecla: " + e.key);
+            });
+
+            // 6. Mouseover
+            document.getElementById("caja").addEventListener("mouseover", function() {
+                this.style.background = "red";
+            });
+
+            // 7. Change
+            document.getElementById("select").addEventListener("change", function() {
+                alert("Seleccionaste: " + this.value);
+            });
+
+            // 8. Focus
+            document.getElementById("input").addEventListener("focus", function() {
+                this.style.background = "yellow";
+            });
+
+            // 9. Blur
+            document.getElementById("input").addEventListener("blur", function() {
+                this.style.background = "white";
+            });
+
+            // 10. Load
+            window.addEventListener("load", function() {
+                console.log("Página cargada");
+            });
+
+        </script>
+
+    </body>
+</html>
+
