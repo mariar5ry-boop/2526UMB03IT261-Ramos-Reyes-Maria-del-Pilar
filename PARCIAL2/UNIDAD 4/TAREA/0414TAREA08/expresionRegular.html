@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <body>
+            <p>Ingresa algo:</p>
+            <input type="text" id="input">
+            <button onclick="validar()">Validar</button>
+            <p id="resultado"></p>
+
+            <script>
+                function validar() {
+                    let valor = document.getElementById("input").value;
+                    let resultado = "";
+
+                      // 1. Solo letras
+                      resultado += "Solo letras: " + /^[A-Za-z]+$/.test(valor) + "<br>";
+
+                     // 2. Solo números
+                     resultado += "Solo números: " + /^[0-9]+$/.test(valor) + "<br>";
+
+                    // 3. Correo
+                    resultado += "Correo: " + /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(valor) + "<br>";
+
+                    // 4. Fecha dd/mm/yyyy
+                    resultado += "Fecha: " + /^\d{2}\/\d{2}\/\d{4}$/.test(valor) + "<br>";
+
+                    // 5. Decimal
+                    resultado += "Decimal: " + /^\d+(\.\d+)?$/.test(valor) + "<br>";
+
+                    // 6. Contraseña (8 caracteres)
+                    resultado += "Password: " + /^.{8,}$/.test(valor) + "<br>";
+
+                    // 7. Teléfono
+                    resultado += "Teléfono: " + /^\d{10}$/.test(valor) + "<br>";
+
+                    // 8. Código Postal
+                    resultado += "CP: " + /^\d{5}$/.test(valor) + "<br>";
+
+                    // 9. Texto con espacios
+                    resultado += "Texto con espacios: " + /^[A-Za-z\s]+$/.test(valor) + "<br>";
+
+                    // 10. Hora HH:MM
+                    resultado += "Hora: " + /^([01]\d|2[0-3]):([0-5]\d)$/.test(valor) + "<br>";
+
+                    document.getElementById("resultado").innerHTML = resultado;
+}
+            </script>
+        </body>
+    </head>
+</html>
