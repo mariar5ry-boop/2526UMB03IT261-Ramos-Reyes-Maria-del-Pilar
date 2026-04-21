@@ -1,26 +1,20 @@
 <html>
-    <head>
 
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <body>
-        <button onclick="funcinoBoton()">Funciona Boton</button>
-        <script>
-            let n={
-                nombre:"Pilar",
-                edad:"21"
-            };
-            
-            console.log(n.edad);
+</head>
 
-            
-
-            document.getElementById("texto").innerHTML="Otro texto";
-
-            document.getElementById("texto").style.color="red";
+<body>
+    <button onclick="mensaje()">Boton Funciona</button>
+    <p id="texto">Texto original</p>
+    <script>
+        document.getElementById("texto").innerHTML = "Texto cambiado";
 
 
-            
-        </script>
-    </body>
+
+    </script>
+</body>
+
 </html>
