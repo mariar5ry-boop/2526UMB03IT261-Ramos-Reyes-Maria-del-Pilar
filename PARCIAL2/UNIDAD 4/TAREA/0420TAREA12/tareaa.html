@@ -1,0 +1,59 @@
+<html lang="es" ng-app="miApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura Bootstrap + AngularJS</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+
+<body class="bg-light">
+
+    <div class="container mt-5" ng-controller="MainController">
+
+        <div class="card shadow">
+            <div class="card-header bg-primary text-white">
+                <h2>{{ titulo }}</h2>
+            </div>
+            <div class="card-body">
+                <p class="lead">bienvenido, <strong>{{ usuario }}</strong>.</p>
+
+                <div class="mb-3">
+                    <label class="form-label">cambiar nombre:</label>
+                    <input type="text" class="form-control" ng-model="usuario">
+                </div>
+
+                <button class="btn btn-success" ng-click="saludar()">enviar la alerta</button>
+            </div>
+            <div class="card-footer text-muted">
+                {{ mensajeEstado }}
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+
+        var app = angular.module('miApp', []);
+
+
+        app.controller('MainController', function ($scope) {
+
+            $scope.titulo = "panel de control angularJS";
+            $scope.usuario = "estudiante";
+            $scope.mensajeEstado = "esperando...";
+
+            $scope.saludar = function () {
+                alert("¡Hola " + $scope.usuario + "! los datos estan vinculados.");
+                $scope.mensajeEstado = "el boton ha sido presionado.";
+            };
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
